@@ -13,13 +13,15 @@ def switch(str: list, alph: list):
     a = 0
     temp = []
     alph = alph.append(" ")
-    while a < strLen:
-        try: 
+    while a < strLen: #idfk what's going on here
+        """try: 
             temp.append(alph[str[a]])
             a=a+1
-        except: 
-            temp.append("")
-            a=a+1
+        except TypeError: 
+            temp.append("a")
+            a=a+1"""
+        temp.append(alph[str[a]])
+        a=a+1
         #print(a)
     print(''.join(temp))
     return ''.join(temp)
